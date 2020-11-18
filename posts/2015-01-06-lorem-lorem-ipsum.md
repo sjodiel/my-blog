@@ -3,7 +3,7 @@ date: 2015-01-06 05:54:23
 title: Lorem lorem ipsum
 description: And I'm not sure about the universe.
 category: JS
-background: "#7AAB13"
+background: "yellow"
 ---
 
 # Lorem ipsum
