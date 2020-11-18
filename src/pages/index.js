@@ -4,26 +4,18 @@ import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import PostItem from "../components/PostItem"
 
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Home</h1>
-    <PostItem />
-    <PostItem />
-    <PostItem />
-    <PostItem />
-    <PostItem />
-    <PostItem />
-    <PostItem />
-    <PostItem />
-    <PostItem />
-    <PostItem />
-    <PostItem />
-    <PostItem />
-    <PostItem />
-    <PostItem />
-    <PostItem />
+    <PostItem
+      slug="/about/"
+      background="blue"
+      category="Misc"
+      date="18 de Novembro de 2020"
+      timeToRead="5"
+      title="Diga não ao Medium: tenha sua própria plataforma"
+      description="Algumas razões para você ter sua própria plataforma ao invés de soluções como o Medium."
+    />
   </Layout>
 )
 
