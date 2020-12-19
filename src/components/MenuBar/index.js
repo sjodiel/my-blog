@@ -53,7 +53,7 @@ const MenuBar = () => {
           onClick={() => {
             window.__setPreferredDisplay(isListMode ? "grid" : "list")
           }}
-          className={display}
+          className="display"
         >
           {isListMode ? <Grid /> : <List />}
         </S.MenuBarItem>

@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const SearchWrapper = styled.section`
   background: var(--background);
@@ -6,6 +7,7 @@ export const SearchWrapper = styled.section`
   flex-direction: column;
   width: 100%;
   transition: opacity 0.4s;
+
   .ais-InstantSearch__root {
     display: flex;
     flex-direction: column;
@@ -16,10 +18,18 @@ export const SearchWrapper = styled.section`
   .ais-SearchBox,
   .ais-Stats {
     padding: 0.5rem 3rem;
+
+    ${media.lessThan("large")`
+      padding: 0.5rem 1rem;
+    `}
   }
 
   .ais-SearchBox {
     padding-top: 6rem;
+    
+    ${media.lessThan("large")`
+      padding-top: 1rem;
+    `}
   }
 
   .ais-Stats {
